@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROJECTS | Jaideep Attri</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="crt-overlay"></div>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">~$ JAIDEEP</a>
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="projects.html" class="active">PROJECTS</a></li>
+        <li><a href="skills.html">SKILLS</a></li>
+        <li><a href="experience.html">EXPERIENCE</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+      <button class="nav-hamburger">≡</button>
+    </div>
+  </nav>
+
+  <main class="main">
+    <section class="section">
+      <div class="section-header">
+        <div class="section-prompt">user@iitr:~$ ls ./projects/</div>
+        <h2 class="section-title">PROJECTS</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="tabs">
+        <button class="tab active" data-tab="all">ALL</button>
+        <button class="tab" data-tab="ml">ML / AI</button>
+        <button class="tab" data-tab="web">WEB</button>
+        <button class="tab" data-tab="other">OTHER</button>
+      </div>
+
+      <div id="all" class="tab-content active">
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card" data-full-description="Ghissu Portal is a dynamic, full-stack web application designed to help students streamline their academic journey. The platform serves as a centralized hub for accessing organized lecture notes, previous exam papers, and syllabus tracking tools across various departments and semesters. Built with a focus on accessibility and efficiency, it provides students with a single portal to manage their academic resources." data-date="June 2026 - July 2026" data-github="https://github.com/savagesavitar/Ghissu">
+            <div class="project-card-header">
+              <span class="project-tag active">WEB</span>
+              <span class="project-tag">FULL STACK</span>
+              <a href="https://github.com/savagesavitar/Ghissu" target="_blank" class="project-tag" style="text-decoration:none; color:var(--primary);">GH:REPO</a>
+            </div>
+            <div class="project-card-body">
+              <div class="project-title">GHISSU PORTAL</div>
+              <div class="project-org">IIT Roorkee | Academic Portal</div>
+              <div class="project-desc">A dynamic full-stack web application designed to help students streamline their academic journey. Centralized hub for lecture notes, exam papers, and syllabus tracking.</div>
+              <div class="project-tech">
+                <span>Web Dev</span>
+                <span>Full Stack</span>
+                <span>Academic</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card" data-full-description="A comprehensive deep learning project focused on detecting deepfake audio in digital media. Utilized advanced signal processing techniques and neural network architectures to identify manipulated audio content with high accuracy. The system analyzes spectral features and temporal patterns to distinguish between authentic and synthetic speech." data-date="June 2026">
+            <div class="project-card-header">
+              <span class="project-tag active">ML/AI</span>
+              <span class="project-tag">DEEP LEARNING</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-title">DEEPFAKE AUDIO DETECTION</div>
+              <div class="project-org">MaRS IIT Roorkee</div>
+              <div class="project-desc">Deep learning system for detecting deepfake audio. Analyzes spectral features and temporal patterns to identify manipulated audio content.</div>
+              <div class="project-tech">
+                <span>TensorFlow</span>
+                <span>Signal Processing</span>
+                <span>Python</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card" data-full-description="An advanced Retrieval-Augmented Generation system that processes video content for intelligent querying. The system indexes video frames, audio transcripts, and metadata to enable natural language queries over video content. Uses agentic workflows to orchestrate retrieval, reasoning, and response generation across multi-modal data sources." data-date="May 2026 - June 2026" data-github="https://github.com/savagesavitar/Agentic-Video-RAG">
+            <div class="project-card-header">
+              <span class="project-tag active">ML/AI</span>
+              <span class="project-tag">RAG</span>
+              <a href="https://github.com/savagesavitar/Agentic-Video-RAG" target="_blank" class="project-tag" style="text-decoration:none; color:var(--primary);">GH:REPO</a>
+            </div>
+            <div class="project-card-body">
+              <div class="project-title">AGENTIC VIDEO RAG</div>
+              <div class="project-org">Self Project</div>
+              <div class="project-desc">Advanced RAG system processing video content for intelligent querying. Indexes frames, transcripts, and metadata with agentic workflows.</div>
+              <div class="project-tech">
+                <span>LLM</span>
+                <span>RAG</span>
+                <span>Multi-modal</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card" data-full-description="Designed and developed recommendation systems for personalized content discovery using collaborative filtering, content-based filtering, and hybrid approaches. Analyzed user behavior patterns and item characteristics to generate relevant recommendations, improving user engagement metrics." data-date="April 2026 - May 2026">
+            <div class="project-card-header">
+              <span class="project-tag active">ML/AI</span>
+              <span class="project-tag">RECOMMENDATION</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-title">RECOMMENDATION SYSTEMS</div>
+              <div class="project-org">Cultural Council</div>
+              <div class="project-desc">Personalized content discovery using collaborative filtering, content-based filtering, and hybrid approaches for improved engagement.</div>
+              <div class="project-tech">
+                <span>Scikit-learn</span>
+                <span>Pandas</span>
+                <span>Python</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="project-card" data-full-description="Built a data-driven investment intelligence platform using NIFTY-50 market data. Applied statistical analysis, time-series forecasting, and machine learning models to identify market trends and generate investment insights. Includes portfolio optimization and risk assessment modules." data-date="May 2026 - Present" data-github="https://github.com/savagesavitar/Nifty50_AI_Dashboard">
+            <div class="project-card-header">
+              <span class="project-tag active">ML/AI</span>
+              <span class="project-tag">FINANCE</span>
+              <a href="https://github.com/savagesavitar/Nifty50_AI_Dashboard" target="_blank" class="project-tag" style="text-decoration:none; color:var(--primary);">GH:REPO</a>
+            </div>
+            <div class="project-card-body">
+              <div class="project-title">DATA-DRIVEN INVESTMENT INTELLIGENCE</div>
+              <div class="project-org">Cultural Council | NIFTY-50</div>
+              <div class="project-desc">Investment intelligence platform using NIFTY-50 data. Statistical analysis, time-series forecasting, and ML models for market trends.</div>
+              <div class="project-tech">
+                <span>NumPy</span>
+                <span>Pandas</span>
+                <span>Matplotlib</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="project-card" data-full-description="Developed a platform for local LLM instrumentation, tracing, and replay. Enables developers to monitor LLM calls, trace execution paths, and replay conversations for debugging and optimization. Built for the Google Developer Student Club at IIT Roorkee." data-date="August 2023 - November 2023">
+            <div class="project-card-header">
+              <span class="project-tag active">ML/AI</span>
+              <span class="project-tag">DEVTOOLS</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-title">LOCAL LLM INSTRUMENTATION PLATFORM</div>
+              <div class="project-org">GDSC, IIT Roorkee</div>
+              <div class="project-desc">LLM instrumentation, tracing, and replay platform for monitoring calls, tracing execution, and replaying conversations.</div>
+              <div class="project-tech">
+                <span>LLM</span>
+                <span>Tracing</span>
+                <span>DevTools</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 7 -->
+          <div class="project-card" data-full-description="Designed and developed a functional prototype using 3D printing technology. Involved CAD modeling, material selection, and iterative prototyping to create a working physical model. Collaborated with the TMI department at IIT Roorkee." data-date="May 2026 - June 2026">
+            <div class="project-card-header">
+              <span class="project-tag">HARDWARE</span>
+              <span class="project-tag">PROTOTYPE</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-title">3D PRINTING PROTOTYPE</div>
+              <div class="project-org">TMI, IIT Roorkee</div>
+              <div class="project-desc">Functional prototype using 3D printing. CAD modeling, material selection, and iterative prototyping for a working physical model.</div>
+              <div class="project-tech">
+                <span>3D Printing</span>
+                <span>CAD</span>
+                <span>Prototyping</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 8 -->
+          <div class="project-card" data-full-description="Built predictive analytics models for resource allocation in disaster and NGO operations. Used optimization algorithms and machine learning to predict resource needs, optimize distribution routes, and improve response times in emergency scenarios." data-date="August 2024 - Present" data-github="https://github.com/savagesavitar/Predictive-Analytics-for-Resource-Allocation-in-Disaster-NGO-Operations">
+            <div class="project-card-header">
+              <span class="project-tag active">ML/AI</span>
+              <span class="project-tag">SOCIAL IMPACT</span>
+              <a href="https://github.com/savagesavitar/Predictive-Analytics-for-Resource-Allocation-in-Disaster-NGO-Operations" target="_blank" class="project-tag" style="text-decoration:none; color:var(--primary);">GH:REPO</a>
+            </div>
+            <div class="project-card-body">
+              <div class="project-title">PREDICTIVE ANALYTICS FOR DISASTER OPS</div>
+              <div class="project-org">NSS, IIT Roorkee</div>
+              <div class="project-desc">Predictive analytics for resource allocation in disaster and NGO operations. Optimization algorithms for emergency response.</div>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>Optimization</span>
+                <span>ML</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 9 - Geological Field Training -->
+          <div class="project-card" data-full-description="Conducted geological field training in the Jaisalmer Basin, Rajasthan. Studied sedimentary formations, structural geology, and basin analysis through hands-on fieldwork and data collection." data-date="March 2025 - April 2025">
+            <div class="project-card-header">
+              <span class="project-tag">FIELDWORK</span>
+              <span class="project-tag">GEOLOGY</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-title">GEOLOGICAL FIELD TRAINING: Jaisalmer Basin</div>
+              <div class="project-org">IIT Roorkee | Rajasthan</div>
+              <div class="project-desc">Field training in the Jaisalmer Basin studying sedimentary formations, structural geology, and basin analysis through hands-on fieldwork.</div>
+              <div class="project-tech">
+                <span>Geology</span>
+                <span>Fieldwork</span>
+                <span>Basin Analysis</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="ml" class="tab-content">
+        <div class="projects-grid">
+          <div class="project-card" data-full-description="Deep learning system for detecting deepfake audio in digital media. Utilized advanced signal processing techniques and neural network architectures to identify manipulated audio content with high accuracy." data-date="June 2026">
+            <div class="project-card-header">
+              <span class="project-tag active">ML/AI</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-title">DEEPFAKE AUDIO DETECTION</div>
+              <div class="project-org">MaRS IIT Roorkee</div>
+              <div class="project-desc">Deep learning system for detecting deepfake audio. Analyzes spectral features and temporal patterns.</div>
+              <div class="project-tech"><span>TensorFlow</span><span>Signal Processing</span></div>
+            </div>
+          </div>
+          <div class="project-card" data-full-description="Advanced RAG system processing video content for intelligent querying using agentic workflows." data-date="May 2026 - June 2026" data-github="https://github.com/savagesavitar/Agentic-Video-RAG">
+            <div class="project-card-header">
+              <span class="project-tag active">ML/AI</span>
+              <a href="https://github.com/savagesavitar/Agentic-Video-RAG" target="_blank" class="project-tag" style="text-decoration:none; color:var(--primary);">GH:REPO</a>
+            </div>
+            <div class="project-card-body">
+              <div class="project-title">AGENTIC VIDEO RAG</div>
+              <div class="project-org">Self Project</div>
+              <div class="project-desc">Advanced RAG system for video content with multi-modal retrieval.</div>
+              <div class="project-tech"><span>LLM</span><span>RAG</span></div>
+            </div>
+          </div>
+          <div class="project-card" data-full-description="Recommendation systems for personalized content discovery using collaborative and content-based filtering." data-date="April 2026 - May 2026">
+            <div class="project-card-header">
+              <span class="project-tag active">ML/AI</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-title">RECOMMENDATION SYSTEMS</div>
+              <div class="project-org">Cultural Council</div>
+              <div class="project-desc">Personalized content discovery with hybrid recommendation approaches.</div>
+              <div class="project-tech"><span>Scikit-learn</span><span>Pandas</span></div>
+            </div>
+          </div>
+          <div class="project-card" data-full-description="Investment intelligence platform using NIFTY-50 data with ML models for market trend analysis." data-date="May 2026 - Present" data-github="https://github.com/savagesavitar/Nifty50_AI_Dashboard">
+            <div class="project-card-header">
+              <span class="project-tag active">ML/AI</span>
+              <a href="https://github.com/savagesavitar/Nifty50_AI_Dashboard" target="_blank" class="project-tag" style="text-decoration:none; color:var(--primary);">GH:REPO</a>
+            </div>
+            <div class="project-card-body">
+              <div class="project-title">DATA-DRIVEN INVESTMENT INTELLIGENCE</div>
+              <div class="project-org">Cultural Council</div>
+              <div class="project-desc">Market trend analysis using time-series forecasting and ML.</div>
+              <div class="project-tech"><span>NumPy</span><span>Pandas</span></div>
+            </div>
+          </div>
+          <div class="project-card" data-full-description="LLM instrumentation platform for monitoring and debugging LLM applications." data-date="August 2023 - November 2023">
+            <div class="project-card-header">
+              <span class="project-tag active">ML/AI</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-title">LOCAL LLM INSTRUMENTATION PLATFORM</div>
+              <div class="project-org">GDSC, IIT Roorkee</div>
+              <div class="project-desc">LLM tracing and replay platform for developer tooling.</div>
+              <div class="project-tech"><span>LLM</span><span>DevTools</span></div>
+            </div>
+          </div>
+          <div class="project-card" data-full-description="Predictive analytics for resource allocation in disaster and NGO operations." data-date="August 2024 - Present" data-github="https://github.com/savagesavitar/Predictive-Analytics-for-Resource-Allocation-in-Disaster-NGO-Operations">
+            <div class="project-card-header">
+              <span class="project-tag active">ML/AI</span>
+              <a href="https://github.com/savagesavitar/Predictive-Analytics-for-Resource-Allocation-in-Disaster-NGO-Operations" target="_blank" class="project-tag" style="text-decoration:none; color:var(--primary);">GH:REPO</a>
+            </div>
+            <div class="project-card-body">
+              <div class="project-title">PREDICTIVE ANALYTICS FOR DISASTER OPS</div>
+              <div class="project-org">NSS, IIT Roorkee</div>
+              <div class="project-desc">Optimization and ML for emergency resource allocation.</div>
+              <div class="project-tech"><span>Python</span><span>Optimization</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="web" class="tab-content">
+        <div class="projects-grid">
+          <div class="project-card" data-full-description="Full-stack academic portal for accessing lecture notes, exam papers, and syllabus tracking." data-date="June 2026 - July 2026" data-github="https://github.com/savagesavitar/Ghissu">
+            <div class="project-card-header">
+              <span class="project-tag active">WEB</span>
+              <a href="https://github.com/savagesavitar/Ghissu" target="_blank" class="project-tag" style="text-decoration:none; color:var(--primary);">GH:REPO</a>
+            </div>
+            <div class="project-card-body">
+              <div class="project-title">GHISSU PORTAL</div>
+              <div class="project-org">IIT Roorkee</div>
+              <div class="project-desc">Full-stack academic portal for students. Centralized resource hub.</div>
+              <div class="project-tech"><span>Full Stack</span><span>Web Dev</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="other" class="tab-content">
+        <div class="projects-grid">
+          <div class="project-card" data-full-description="Functional prototype using 3D printing technology with CAD modeling and iterative prototyping." data-date="May 2026 - June 2026">
+            <div class="project-card-header">
+              <span class="project-tag">HARDWARE</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-title">3D PRINTING PROTOTYPE</div>
+              <div class="project-org">TMI, IIT Roorkee</div>
+              <div class="project-desc">Functional prototype with 3D printing and CAD modeling.</div>
+              <div class="project-tech"><span>3D Printing</span><span>CAD</span></div>
+            </div>
+          </div>
+          <div class="project-card" data-full-description="Geological field training in Jaisalmer Basin, Rajasthan." data-date="March 2025 - April 2025">
+            <div class="project-card-header">
+              <span class="project-tag">FIELDWORK</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-title">GEOLOGICAL FIELD TRAINING</div>
+              <div class="project-org">IIT Roorkee</div>
+              <div class="project-desc">Field training in the Jaisalmer Basin studying sedimentary formations.</div>
+              <div class="project-tech"><span>Geology</span><span>Fieldwork</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Modal -->
+  <div class="modal-overlay">
+    <div class="modal">
+      <div class="modal-header">
+        <span class="modal-title">PROJECT DETAILS</span>
+        <button class="modal-close">[X]</button>
+      </div>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
+  <div class="status-line">
+    <span>jaideep@iitr:~ | INTEGRATED M.TECH GEOPHYSICAL TECHNOLOGY</span>
+    <span id="status-time"></span>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

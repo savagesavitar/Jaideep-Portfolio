@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONTACT | Jaideep Attri</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="crt-overlay"></div>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">~$ JAIDEEP</a>
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="projects.html">PROJECTS</a></li>
+        <li><a href="skills.html">SKILLS</a></li>
+        <li><a href="experience.html">EXPERIENCE</a></li>
+        <li><a href="contact.html" class="active">CONTACT</a></li>
+      </ul>
+      <button class="nav-hamburger">≡</button>
+    </div>
+  </nav>
+  <main class="main">
+    <section class="section">
+      <div class="section-header">
+        <div class="section-prompt">user@iitr:~$ cat ./contact.txt</div>
+        <h2 class="section-title">GET IN TOUCH</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="card">
+            <div class="card-header">
+              <span class="card-header-title">+--- CONTACT INFO ---+</span>
+              <div class="card-header-dots"><span></span><span></span><span></span></div>
+            </div>
+            <div class="card-body">
+              <div class="contact-item">
+                <span class="contact-item-icon">&gt;</span>
+                <div>
+                  <div class="contact-item-label">EMAIL</div>
+                  <a href="mailto:jaideepattri11@gmail.com" class="contact-item-value">jaideepattri11@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-item-icon">&gt;</span>
+                <div>
+                  <div class="contact-item-label">PHONE</div>
+                  <a href="tel:9541346524" class="contact-item-value">9541346524</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-item-icon">&gt;</span>
+                <div>
+                  <div class="contact-item-label">LINKEDIN</div>
+                  <a href="https://www.linkedin.com/in/jaideepattri/" target="_blank" class="contact-item-value">linkedin.com/in/jaideepattri</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-item-icon">&gt;</span>
+                <div>
+                  <div class="contact-item-label">GITHUB</div>
+                  <a href="https://github.com/savagesavitar" target="_blank" class="contact-item-value">github.com/savagesavitar</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-item-icon">&gt;</span>
+                <div>
+                  <div class="contact-item-label">RESUME</div>
+                  <a href="resume.pdf" target="_blank" class="contact-item-value">Download Resume (PDF)</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-item-icon">&gt;</span>
+                <div>
+                  <div class="contact-item-label">CODEFORCES</div>
+                  <a href="https://codeforces.com/profile/Savitar0" target="_blank" class="contact-item-value">Savitar0 (1200+)</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-item-icon">&gt;</span>
+                <div>
+                  <div class="contact-item-label">UNIVERSITY</div>
+                  <span class="contact-item-value">IIT Roorkee</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 32px;">
+            <pre class="ascii-art">
+    ╔══════════════════════════════════╗
+    ║   LET'S BUILD SOMETHING GREAT   ║
+    ║           TOGETHER              ║
+    ╚══════════════════════════════════╝
+            </pre>
+            <div style="margin-top: 16px; display: flex; gap: 0;">
+              <a href="https://github.com/savagesavitar" target="_blank" class="btn" style="flex:1; justify-content:center;">[ GITHUB ]</a>
+              <a href="https://www.linkedin.com/in/jaideepattri/" target="_blank" class="btn" style="flex:1; justify-content:center;">[ LINKEDIN ]</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap">
+          <div class="card">
+            <div class="card-header">
+              <span class="card-header-title">+--- SEND MESSAGE ---+</span>
+              <div class="card-header-dots"><span></span><span></span><span></span></div>
+            </div>
+            <div class="card-body">
+              <div class="form-prompt">user@iitr:~$ ./send_message.sh</div>
+              <form id="contactForm" style="margin-top: 16px;">
+                <div class="form-group">
+                  <label class="form-label">&gt; YOUR_NAME:</label>
+                  <input type="text" class="form-input" placeholder="Enter your name..." required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">&gt; YOUR_EMAIL:</label>
+                  <input type="email" class="form-input" placeholder="Enter your email..." required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">&gt; SUBJECT:</label>
+                  <input type="text" class="form-input" placeholder="What is this about?">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">&gt; MESSAGE:</label>
+                  <textarea class="form-textarea" placeholder="Type your message here..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">[ SEND MESSAGE ]</button>
+              </form>
+              <div id="formSuccess" style="display:none; margin-top: 16px; padding: 16px; border: 1px solid var(--primary); color: var(--primary); font-size: 0.85rem;">
+                [OK] Message received. I'll get back to you soon!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="status-line">
+    <span>jaideep@iitr:~ | INTEGRATED M.TECH GEOPHYSICAL TECHNOLOGY</span>
+    <span id="status-time"></span>
+  </div>
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      this.style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
