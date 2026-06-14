@@ -100,10 +100,11 @@ body {
   font-weight: 700;
   color: var(--primary);
   text-shadow: var(--text-glow);
-  padding: 12px 16px;
+  padding: 12px 12px;
   border-right: 1px solid var(--border);
   text-decoration: none;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .nav-links {
@@ -112,6 +113,12 @@ body {
   gap: 0;
   flex: 1;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.nav-links::-webkit-scrollbar {
+  display: none;
 }
 
 .nav-links a {
@@ -401,12 +408,7 @@ body {
   width: 120px;
   height: 120px;
   border: 2px solid var(--primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.5rem;
-  color: var(--primary);
-  text-shadow: var(--text-glow);
+  overflow: hidden;
   margin-bottom: 24px;
 }
 
@@ -997,27 +999,24 @@ body {
 /* ====== MOBILE RESPONSIVE ====== */
 @media (max-width: 768px) {
   .nav-links {
-    display: none;
-    position: absolute;
-    top: 45px;
-    left: 0;
-    width: 100%;
-    background: var(--bg);
-    border-bottom: 1px solid var(--border);
-    flex-direction: column;
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
   }
 
-  .nav-links.open {
-    display: flex;
+  .nav-links::-webkit-scrollbar {
+    display: none;
   }
 
   .nav-links a {
-    border-right: none;
-    border-bottom: 1px solid var(--border);
+    font-size: 0.65rem;
+    padding: 12px 10px;
+    border-right: 1px solid var(--border);
   }
 
   .nav-hamburger {
-    display: block;
+    display: none;
   }
 
   .about-grid,
@@ -1066,6 +1065,34 @@ body {
 
   .section {
     padding: 40px 16px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .about-avatar {
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+  }
+
+  .skill-category-body {
+    grid-template-columns: 1fr;
+  }
+
+  .modal {
+    width: 95%;
+  }
+
+  .hero-name-ascii {
+    font-size: clamp(0.18rem, 2.8vw, 0.4rem);
+    overflow-x: auto;
   }
 }
 

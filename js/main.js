@@ -11,23 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // ====== NAVIGATION ======
 function initNav() {
-  const hamburger = document.querySelector('.nav-hamburger');
-  const navLinks = document.querySelector('.nav-links');
-
-  if (hamburger && navLinks) {
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
-      hamburger.textContent = navLinks.classList.contains('open') ? '✕' : '≡';
-    });
-
-    navLinks.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('open');
-        hamburger.textContent = '≡';
-      });
-    });
-  }
-
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-links a').forEach(link => {
     const href = link.getAttribute('href');
